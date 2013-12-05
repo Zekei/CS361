@@ -1,14 +1,14 @@
-<script language='javascript' type='text/javascript'>
-function check(input) {
-	if (input.value != document.getElementById('password').value) {
-		input.setCustomValidity('The two passwords must match.');
-	} else {
-		// input is valid -- reset the error message
-		input.setCustomValidity('');
-	}
-}
-<a href="?register=0">
+<?php
+require_once("functions.inc.php");
+$username = $_POST['username'];
+$password = $_POST['password'];
+if(validate_user($username, $password) != 0) {
+	setcookie("username", $username);
+	setcookie("password", $password);
+} else {
 
-</script>
-	<form method="post" action="?register=1">
+
+
+?>
+
 	

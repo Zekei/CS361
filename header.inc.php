@@ -3,7 +3,7 @@
 <html>
 <head>
 	<title>
-		
+		<?php 
 <?php
 	define(U_TOKEN, "tokentokentoken1");
 	define(P_TOKEN, "tokentokentokentokentokentoken1");
